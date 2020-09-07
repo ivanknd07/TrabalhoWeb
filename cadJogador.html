@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<html>
+    <head>
+       
+        <link rel="stylesheet" href="Css/Trab.css"> <!--CONECTANDO O CSS COM O HTML-->
+        <meta charset="UTF-8"><!--CONJUNTO DE CARACTERES-->
+        <title>TopTeam</title>
+    </head>
+    <head>
+        
+    </head>
+
+    <body>
+      
+        <img id="planoFundo" src="Imagens/torcedorF.jpg" alt="falha...">
+
+        <ul  id="nomeTimeCadJogador">
+            <li> TOP TEAM FUTEBOL CLUB </li>
+        </ul>
+
+        <ul id="escudoCadJogador">                 
+            <li id="escudoCadJogador"> <img src="Imagens/2.png" alt="falha"> </li>                 
+      </ul>
+
+       
+
+
+        <div id="cadastroJog">
+            <form>
+                <ul >
+                    <li id="nomeCadastro">CADASTRO DE JOGADOR</li><br><br>
+                    <li>
+                        <label for="name">&nbsp;&nbsp;&nbsp;Nome:&nbsp;</label>
+                        <input type="text" size="33" id="name" name="cadJogador" max="31"> 
+                        
+                        <label for="name">&nbsp;&nbsp;&nbsp;CPF:&nbsp;</label>
+                        <input type="text" size="10" id="cpf" name="cadJogador" max="31"> 
+
+                        <label for="name">&nbsp;&nbsp;&nbsp;Nascimento:&nbsp;</label>
+                        <input type="text" size="10" id="nascimento" name="cadJogador" max="31"> 
+
+                    </li>
+                    <br><br>
+                    <li>
+                        <label for="name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;End:&nbsp;</label>
+                        <input type="text" size="24" id="end" name="cadJogador" max="31"> 
+                        
+                        <label for="name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nº:&nbsp;</label>
+                        <input type="text" size="1" id="nº" name="cadJogador" max="31"> 
+
+                        <label for="name">&nbsp;Bairro:&nbsp;</label>
+                        <input type="text" size="10" id="bairro" name="cadJogador" max="31"> 
+
+                        <label for="name">Cidade:&nbsp;</label>
+                        <input type="text" size="10" id="cidade" name="cadJogador" max="31"> 
+
+                    </li>
+                   <br><br>
+                    <li>
+                        <label for="name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cep:&nbsp;</label>
+                        <input type="text" size="24" id="end" name="nameA" max="31"> 
+                        
+                        <label for="name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tel:&nbsp;</label>
+                        <input type="text" size="17" id="nº" name="nameA" max="31"> 
+
+                        <label for="name">&nbsp;Email:&nbsp;</label>
+                        <input type="text" size="18" id="nascimento" name="nameA" max="31"> 
+
+                    </li>
+                        <br><br>
+                    <li>
+                        <label for="name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Posição:&nbsp;</label>
+                        <select>
+                             <option value="Goleiro">Goleiro</option>
+                             <option value="Zagueiro">Zagueiro</option>
+                             <option value="Lateral-Dir">Lateral-Dir</option>
+                             <option value="Lateral-Esq">Lateral-Esq</option>
+                             <option value="Meia">Meia</option>
+                             <option value="Atacante">Atacante</option>
+                            </select>
+                        
+                        <label for="name">&nbsp;Salario R$:&nbsp;</label>
+                        <input type="text" size="8" id="salario" name="nameA" max="31"> 
+
+                        <label for="name">&nbsp;Contrato até:&nbsp;</label>
+                        <input type="text" size="7" id="contrato" name="nameA" max="31"> 
+
+                        <label for="name">&nbsp;Status:&nbsp;</label>                        
+                        <select>
+                             <option value="disponivel">Disponivel</option>
+                             <option value="dpmedico">Dep. Medico</option>
+                             <option value="suspenso">Suspenso</option>
+                             
+                            </select> 
+
+                    </li>
+                    <br><br><br>
+                   
+                    <li id="posiBotao">
+                        <input type="reset" id="botao_clear" value="CORRIGIR">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="button" id="botao_add" value="SALVAR" onclick="cadastro()"> 
+                    </li>
+    
+                </ul>
+            </form>
+            
+        </div>
+        
+
+    </body>
+
+
+
+
+</html>

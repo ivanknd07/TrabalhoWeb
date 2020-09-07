@@ -1,0 +1,546 @@
+@charset "UTF-8";/* PARA QUESTÕES DE ACENTUAÇAÕ*/
+@media  screen and(max-width: 900px){
+    body{
+        background:red;
+    }
+}
+/*================================ CONFIGURANDO O CABEÇALHO - AREA 1 ================================================*/
+#cabecalho{
+   background-color:blue;
+  /*  background-color: black;*/
+    height: 260px;/*ALTURA*/
+    width:  100%; /*LARGURA*/
+    margin-top: 0px;
+
+    
+    
+   /* margin-left: 0px;/*MARGEM ESQUERDA*/
+}
+#nomeTime{/*CONFIGURAÇÃO DO NOME */
+    margin-left: 550px;/*MARGEM ESQUERDA*/
+    width: 100 px;/*ALTURA*/
+    height: 300px;/*LARGURA*/
+    margin-top: 5%;
+    color:black;
+    font-size: 20px;
+    position:absolute;
+    list-style: none;/*Tira o ponto da lista*/
+    text-shadow: 1px 1px 1px orange, -1px 1px 1px orange,1px -1px 1px orange,1px 1px 1px orange,
+    -1px -1px 1px orange;/*EFEITO COM SOMBRAS PARA DA O CONTORNO DO NOME DO TIME*/
+    
+    
+    
+}
+#escudoImg{/*POSICIONANDNO O ESCUDO DO TIME*/   
+    
+    margin-left: 50%x;/*MARGEM ESQUERDA*/
+    margin-top: 0%; /*MARGEM EM CIMA*/
+    width: 45px;  /*LARGURA*/
+    width: 0%;/*ALTURA*/
+    position: absolute;
+    
+    
+
+}
+
+
+/*================================================================================================================*/
+/*-------------------------- BOTOES INICIO - HISTORIA - CONQUISTAS -----------------------------------------------*/
+#menusuperior ul{
+    list-style: none;
+    display: block;
+    position: absolute;      
+    top: 47%;
+    left: 49%;  
+    
+}
+
+
+#menusuperior li{/*FORMATAÇÃO DOS ITENS DA LISTA*/
+    display: inline-block;
+    border-radius: 1px;          
+    background-color:orange;/*COR DE FUNDO*/
+    border-color: darkslateblue;
+    margin: 40px;
+    height: 27px;/*ALTURA*/
+     width: 110px; /*LARGURA*/
+    cursor: pointer;/*PRA APARECER A MÃO DO MOUSE*/   
+    color: black;   
+        
+}
+
+
+#menusuperior li:hover {/*CONFIGURAÇÃO PARA MUDAR DE COR QUANDO PASSAR O MAUSE POR CIMA DO MENU*/
+    background-color: orange;
+}
+
+
+#menusuperior a {/*CONFIGURAÇÃO DOS LINKS*/
+   color:white;
+   text-decoration-line: none;/*TIRANDO O SOBRINHADO DO LINK*/
+   font-size: 12px;
+   background-color: blue;
+   margin-left: 7%;
+   height: 5%;/*ALTURA*/
+   width: 10%; /*LARGURA*/
+}
+
+
+/*======================================== CONFIGURANDO MENU LATERAL =============================================*/
+#planofundo{/*CONFIGURANÇÃO PARA INSERIR PLANO DE FUNDO*/
+    background-image: url("campnou");
+ /*   height: 900px;/*ALTURA*/
+  /*  width: 1333px; /*LARGURA*/
+ /*   margin-top: 0px;*/
+
+    height: 220%;/*ALTURA*/
+    width: 100%; /*LARGURA*/
+    margin:0px;
+    padding: 0px;
+    position: absolute;    
+    box-sizing: content-box;
+    
+
+    
+}
+#linhadois{
+    border-bottom: 1px orange solid;
+    /*background-color: orange;*/
+    height: 1px;/*ALTURA*/
+    width:  100%; /*LARGURA*/
+    margin-top: 0px;
+}
+
+
+#menulateral{
+    top: 345px;
+    left: 8px;
+    height: 350px;/*ALTURA*/
+    width:  290px; /*LARGURA*/
+    margin-left: 15%;
+    background-color: black;
+    position: absolute;/*PERMITE QUE MOVIMENTE POR TODA A PAGINA*/
+    border: solid;  
+    border-color: orange;
+    border-width:1px;
+}
+
+
+#menulateral ul{/*CONFIGURANDO A LISTA*/
+    list-style: none;/*PRA SUMIR COM OS MARCADORES DAS LISTAS*/
+    display:ruby;
+    position: absolute;        
+    top: -15px;
+    left: -20px;   
+}
+
+
+#menulateralItens {/*CONFIGURANDO OS ITENS DA LISTA*/
+    margin:15px;
+    font-family: "arial";
+    font-size: 15px;
+    color: black;
+    border:solid 1px;
+    border-radius: 10px;
+    background-color:orange;
+    border-color:orange;
+    margin-left: 3px;    
+    cursor: pointer;
+    width:  220px; /*LARGURA*/    
+}
+
+
+#menulateralItens:hover{/*CONFIGURAÇÃO PAARA MUDAR DE COR AO PASSAR O MAUSE POR CIMA DO BOTTON DA LISTA*/
+    background-color: white;
+    border-color: whites;   
+}
+
+
+#nomemenu{/*FORMANTANDO O NOME >>> MENU <<< */
+    left: 20%;
+    list-style: none;/*PRA SUMIR COM OS MARCADORES DAS LISTAS*/
+    color: chartreuse;
+    margin-top: 5%;
+    margin:15px;/*ESPAÇAMENTO VERTICAL ENTRE OS ITENS DA LISTA*/
+    font-family: "arial";
+    font-size: 18px;
+    color:white; 
+    border-bottom:solid 2px;
+    border-color: orange;
+    width: 75%;
+    margin-left: 18px;
+}
+
+
+#emailEsenha{
+    top: 590px;
+}
+
+
+#emailSenha{
+    list-style: none;
+    display:ruby;
+    position: absolute;        
+    top: 590px;
+    left: 17%;
+    margin:-5px;    
+    color: orange;
+    font-family: Arial, Helvetica, sans-serif;
+    size: 10px;
+}   
+
+
+#botaocadastro{
+    position: absolute;
+    color:white;
+    list-style: none;/*Tira o ponto da lista*/
+    margin-left: 7%;
+    top: 645px;
+   /* left: 5%;*/
+    color: white;
+    cursor: pointer;
+    width: 40px; /*LARGURA*/
+    height: 23px;/*ALTURA*/
+    border-color: orange;
+    font-size: 10px;
+  /*  background-color:blue;*/
+}
+
+
+#botaocadastro :hover{
+    background-color:green;
+    color: white;
+}
+
+
+#botaoacesso{
+    position: absolute;
+    color:white;  
+    list-style: none;/*Tira o ponto da lista*/
+   /* display: ruby; */
+    margin-left: 19%;
+    top: 627px;
+    color: black; 
+    cursor: pointer;  
+    border-width:1px;
+    width: 50px; /*LARGURA*/
+    height: 10px;/*ALTURA*/
+}
+
+
+#botaoacesso :hover {
+    background-color: blue;
+    color: white;
+}
+
+
+/*======================================== CONFIGURANDO A PARTE DAS NOTICIAS =============================================*/
+#listaNoticias{/*CONFIGURANDO A LISTA ONDE VAI VINCULAR AS NOTICIAS*/
+    list-style: none;/*PRA SUMIR COM OS MARCADORES DAS LISTAS*/
+    display:ruby;
+    position: absolute;        
+    top: 56%;
+    height: 290px;/*ALTURA*/
+    width:  600px; /*LARGURA*/
+    border: solid 1px;
+    border-color:blue;    
+    margin: 2%;
+    padding: 2%;
+    margin-left: 40%;
+    background-color:white;
+}
+
+
+#ItemNoticia{
+    
+
+}
+#listaVideo{
+    list-style: none;/*PRA SUMIR COM OS MARCADORES DAS LISTAS*/
+    display:ruby;
+    position: absolute;        
+    top: 125%;
+    height: 298px;/*ALTURA*/
+    width:  600px; /*LARGURA*/
+    border: solid 1px;
+    border-color:blue;    
+    margin: 2%;
+    padding: 2%;
+    margin-left: 40%;
+    background-color: white;
+}
+/*====================================================================================================================*/
+#listaLinks {
+    list-style: none;/*PRA SUMIR COM OS MARCADORES DAS LISTAS*/
+    display:ruby;
+    position: absolute;        
+    top: 125%;
+    /*left: 60%px;*/
+    height: 298px;/*ALTURA*/
+    width:  288px; /*LARGURA*/
+    border: solid 1px;
+    border-color: yellow;
+    margin: 2%;
+    padding: 2%;
+    margin-left: 7%;
+    background-color:black;
+
+}    
+#itemLinks {
+    margin:25px;/*ESPAÇAMENTO VERTICAL ENTRE OS ITENS DA LISTA*/
+    font-family: "arial";
+    font-size: 20px;
+    color: black;
+    border:solid 1px;
+    border-radius: 10px;
+    background-color:orange;
+    border-color:orange;
+    margin-left: 40px;
+    cursor: pointer;
+
+}
+#itemAcessar{
+    margin:25px;/*ESPAÇAMENTO VERTICAL ENTRE OS ITENS DA LISTA*/
+    font-family: "arial";
+    font-size: 20px;
+    color:white;
+    border-bottom:solid 2px;
+    border-color: orange;
+    margin-left: 40px;
+    
+
+}
+
+
+/*====================================================================================================================*/
+#rodapepagina{/*CONFIGURANDO A LISTA DO RODAPE DA PAGINA*/
+    
+    height: 150px;/*ALTURA*/
+    width:  100%; /*LARGURA*/    
+    margin-top: -50px;
+    list-style: none;/*Tira o ponto da lista*/
+   
+    
+}
+#rodapesite {/*CONFIGURANDO UM ITEM DA LSITA*/
+    position: absolute;
+    height: -6px;
+    margin-left: 38%;
+    margin-top: 95%;
+    color:black;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    border: solid 1px;
+    border-color:orangered;
+    padding: 5px;
+    border: size 15px;
+    list-style: none;/*Tira o ponto da lista*/
+    text-shadow: 1px 1px 1px orangered;
+
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*------------------------------->>> CONFIGURAÇÕES DA PAGINA DE CADASTRO DE TORCEDOR <<<---------------------------*/
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#planoFtorcedor{
+    
+    background-image: url("torcedorF");
+    height: 100%;/*ALTURA*/
+    width: 100%; /*LARGURA*/
+    margin:0px;
+    padding: 0px;
+    position: absolute;    
+    box-sizing: content-box;
+}
+
+
+#formularioT ul{/*CONFIGURANDO A LISTA*/
+    list-style: none;/*PRA SUMIR COM OS MARCADORES DAS LISTAS*/
+    display:ruby;
+    position: absolute;        
+    top: 20%;
+    left: 30%px;
+    border: solid 1px;
+    border-color:blue;    
+    margin: 2%;
+    padding: 2%;
+    margin-left: 25%;
+    background-color:lightsteelblue;
+}
+
+#bemvindo{
+    margin-left:33% ;
+    
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*------------------------------->>> CONFIGURAÇÕES DA PAGINA DE CADASTRO DE JOGADOR <<<---------------------------*/
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#planoFundo{
+    background-image: url("jogadores");
+    
+    height: 150%;/*ALTURA*/
+    width: 100%; /*LARGURA*/
+    margin:0px;
+    padding: 0px;   
+    position: absolute;    
+    box-sizing: content-box;
+
+
+}
+
+#nomeTimeCadJogador{
+    margin-left: 37%;/*MARGEM ESQUERDA*/
+    width: 100 px;/*ALTURA*/
+    height: 300px;/*LARGURA*/
+    margin-top: 1%;
+    color:black;
+    font-size: 20px;
+    position:absolute;
+    list-style: none;/*Tira o ponto da lista*/
+    text-shadow: 1px 1px 1px orange, -1px 1px 1px orange,1px -1px 1px orange,1px 1px 1px orange,
+    -1px -1px 1px orange;/*EFEITO COM SOMBRAS PARA DA O CONTORNO DO NOME DO TIME*/ 
+}
+
+#escudoCadJogador{
+    margin-left: 35%;/*MARGEM ESQUERDA*/
+    margin-top: 20px; /*MARGEM EM CIMA*/
+    width: 30px;  /*LARGURA*/
+    height: 10px;/*ALTURA*/  
+    position: absolute;
+}
+
+
+#nomeCadastro{
+    margin-left: 33%;
+   
+}
+#cadastroJog ul{/*CONFIGURANDO A LISTA*/
+    list-style: none;/*PRA SUMIR COM OS MARCADORES DAS LISTAS*/
+    display:ruby;
+    position: absolute;        
+    top: 50%;
+    
+    border: solid 1px;
+    border-color:orangered;    
+    margin: 2%;
+    padding: 2%;
+    margin-left: 22%;
+    background-color:lightsteelblue;
+}
+#posiBotao{
+    margin-left: 33%;
+}
+#posiBotao :hover {
+    background-color: green;
+    color: white;
+    
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*------------------------------->>>>>>> CONFIGURAÇÕES DA PAGINA DA ADMINISTRAÇÃO <<<<<<---------------------------*/
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+#escudoAdm {
+    margin-left: -10px;/*MARGEM ESQUERDA*/
+    margin-top: 2px; /*MARGEM EM CIMA*/
+    width: 30px;  /*LARGURA*/
+    height: 10px;/*ALTURA*/  
+    position: absolute;
+     
+}
+#planoFundoAdm {
+    background-image: url("bola");
+    height: 150%;/*ALTURA*/
+    width: 100%; /*LARGURA*/
+    margin:0px;
+    padding: 0px;   
+    position: absolute;    
+   /* box-sizing: content-box;*/
+} 
+#listaAdm{
+    list-style: none;/*PRA SUMIR COM OS MARCADORES DAS LISTAS*/
+    display:inline-block;
+    position: absolute;        
+    top: 20%;
+    left: 30%px;        
+    margin: 2%;
+    padding: 2%;
+    margin-left: 25%;
+    
+}
+#nomeTimeAdm {
+    margin-left: 250px;/*MARGEM ESQUERDA*/
+    width: 100 px;/*ALTURA*/
+    height: 300px;/*LARGURA*/
+    margin-top: 1%;
+    color:black;
+    font-size: 20px;
+    position:absolute;
+    list-style: none;/*Tira o ponto da lista*/
+    text-shadow: 1px 1px 1px orange, -1px 1px 1px orange,1px -1px 1px orange,1px 1px 1px orange,
+    -1px -1px 1px orange;/*EFEITO COM SOMBRAS PARA DA O CONTORNO DO NOME DO TIME*/   
+
+}
+#listaMenuAdm{
+    list-style: none;/*PRA SUMIR COM OS MARCADORES DAS LISTAS*/
+    display:inline-block;
+    position: absolute;        
+    top: 5%;
+    left: 75%;
+    height: 298px;/*ALTURA*/
+    width:  275px; /*LARGURA*/  
+    margin: 2%;
+    padding: 2%;   
+}
+
+#itemListaAdm{
+    margin:25px;/*ESPAÇAMENTO VERTICAL ENTRE OS ITENS DA LISTA*/
+    font-family: "arial";
+    font-size: 20px;
+    color:black;
+    border:solid 1px;
+    border-radius: 1px;
+    background-color:orangered;;
+    border-color:orange;
+    margin-left: 40px;
+    cursor: pointer;
+    margin: 12%;
+
+}
+#itemListaAdm:hover{
+    background-color:white;
+    color:black;
+
+}
+
+#listaBotaoSair {
+    list-style: none;/*PRA SUMIR COM OS MARCADORES DAS LISTAS*/
+    display:inline-block;
+    position: absolute;        
+    top: -50px;
+    left: 90%;
+    height: 298px;/*ALTURA*/
+    width:  90px; /*LARGURA*/  
+    margin: 2%;
+    padding: 2%;
+}
+
+#itemSair{
+    margin:25px;/*ESPAÇAMENTO VERTICAL ENTRE OS ITENS DA LISTA*/
+    font-family: "arial";
+    font-size: 20px;
+    color:black;
+    border:solid 1px;
+    border-radius: 10px;
+    background-color:orangered;
+    border-color:white;
+    margin-left: 40px;
+    cursor: pointer;
+    margin: 12%;
+
+}
+
+#itemSair:hover{
+    background-color:blue;
+    color:white;
+
+}
