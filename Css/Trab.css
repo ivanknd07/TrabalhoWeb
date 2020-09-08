@@ -181,7 +181,7 @@
     list-style: none;
     display:ruby;
     position: absolute;        
-    top: 590px;
+    top: 570px;
     left: 17%;
     margin:-5px;    
     color: orange;
@@ -191,19 +191,20 @@
 
 
 #botaocadastro{
-    position: absolute;
-    color:white;
     list-style: none;/*Tira o ponto da lista*/
-    margin-left: 7%;
-    top: 645px;
-   /* left: 5%;*/
+    display: ruby;
+    position: absolute;
+    color:white;    
+    margin: 0px;
+    left: 19%;
+    top: 618px;
     color: white;
     cursor: pointer;
     width: 40px; /*LARGURA*/
     height: 23px;/*ALTURA*/
     border-color: orange;
     font-size: 10px;
-  /*  background-color:blue;*/
+
 }
 
 
@@ -217,9 +218,9 @@
     position: absolute;
     color:white;  
     list-style: none;/*Tira o ponto da lista*/
-   /* display: ruby; */
+    display: ruby;
     margin-left: 19%;
-    top: 627px;
+    top: 600px;
     color: black; 
     cursor: pointer;  
     border-width:1px;
@@ -270,6 +271,8 @@
     background-color: white;
 }
 /*====================================================================================================================*/
+/*=========================================== CONFIGURANDO O MENU DE LINKS ===========================================*/
+
 #listaLinks {
     list-style: none;/*PRA SUMIR COM OS MARCADORES DAS LISTAS*/
     display:ruby;
@@ -296,17 +299,21 @@
     background-color:orange;
     border-color:orange;
     margin-left: 40px;
+    top: 20%;
     cursor: pointer;
+
 
 }
 #itemAcessar{
-    margin:25px;/*ESPAÇAMENTO VERTICAL ENTRE OS ITENS DA LISTA*/
+    margin:-13px;/*ESPAÇAMENTO VERTICAL ENTRE OS ITENS DA LISTA*/
     font-family: "arial";
     font-size: 20px;
     color:white;
-    border-bottom:solid 2px;
+    border-bottom:solid 2px;    
     border-color: orange;
-    margin-left: 40px;
+    margin-left: 15px;
+    
+    
     
 
 }
