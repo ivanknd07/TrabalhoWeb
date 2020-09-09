@@ -28,7 +28,7 @@
 
 
         <div id="cadastroJog">
-            <form>
+            <form >
                 <ul >
                     <li id="nomeCadastro">CADASTRO DE JOGADOR</li><br><br>
                     <li>
@@ -39,7 +39,7 @@
                         <input type="text" size="10" id="cpf" name="cadJogador" max="31"> 
 
                         <label for="name">&nbsp;&nbsp;&nbsp;Nascimento:&nbsp;</label>
-                        <input type="text" size="10" id="nascimento" name="cadJogador" max="31"> 
+                        <input type="date" size="10" id="nascimento" name="cadJogador" max="31"> 
 
                     </li>
                     <br><br>
@@ -66,7 +66,7 @@
                         <input type="text" size="17" id="tel" name="nameA" max="31"> 
 
                         <label for="name">&nbsp;Email:&nbsp;</label>
-                        <input type="text" size="18" id="email" name="nameA" max="31"> 
+                        <input type="email" size="18" id="email" name="nameA" max="31"> 
 
                     </li>
                         <br><br>
@@ -85,7 +85,7 @@
                         <input type="text" size="8" id="salario" name="nameA" max="31"> 
 
                         <label for="contrato">&nbsp;Contrato até:&nbsp;</label>
-                        <input type="text" size="7" id="contrato" name="nameA" max="31"> 
+                        <input type="date" size="7" id="contrato" name="nameA" max="31"> 
 
                         <label for="status">&nbsp;Status:&nbsp;</label>                        
                         <select id="status">
@@ -100,8 +100,9 @@
                     <li id="posiBotao">
                         <input type="reset" id="botao_clear" value="CORRIGIR">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <input type="button" id="botao_add" value="SALVAR" onclick="cadastraJogador(nome, cpf, nascimento, end, nº, bairro, cidade, cep, tel,
+                        <input type="submit" id="botao_add" value="SALVAR" onclick="cadastraJogador(nome, cpf, nascimento, end, nº, bairro, cidade, cep, tel,
                         email, posicao, salario, contrato, status)"> 
+                        <input type="button" id="botao_amd" value="VOLTAR para ADM" onclick="window.location='adm.html' ">
                     </li>
     
                 </ul>
