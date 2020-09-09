@@ -48,6 +48,7 @@ function cadastraJogador(nome, cpf, nascimento, end, n, bairro, cidade, cep, tel
             alert("Cadastrado com Sucesso!");
         }
         else alert("Seu navegador opera em uma versão antiga, não é possivel carregar uma aplicação!");
+        window.location="listJogadores.html";
     }     
 }
 
@@ -121,4 +122,180 @@ function validacao(f){
         login();
     }
 
+}
+
+
+function cadastraTorcedor(nome, sexo, nascimento, cpf, email, tel, end, bairro, cidade){
+    let novoTorcedor = {
+        nome:nome.value,
+        sexo:sexo.value,
+        nascimento:nascimento.value,
+        cpf:cpf.value,
+        email:email.value,
+        tel: tel.value,
+        end:end.value,
+        bairro:bairro.value,
+        cidade:cidade.value,
+        
+    };
+    alert("Torcedor: "+nome.value+" cadastrado!");
+    if(typeof(Storage) !== "undefined"){
+        let torcedores = localStorage.getItem("torcedores");
+        if(torcedores == null) torcedores = []; // caso não exista torcedores criados, um vetor sera inicializado para aloca-los
+        else torcedores = JSON.parse(torcedores);
+        torcedores.push(novoTorcedor); 
+        localStorage.setItem("torcedores", JSON.stringify(torcedores));
+        alert("Cadastrado com Sucesso!");
+    }
+    else alert("Seu navegador opera em uma versão antiga, não é possivel carregar uma aplicação!");
+
+    window.location="listTorcedores.html";
+}
+
+function listarTorcedores(){
+    if(typeof(Storage) !== "undefined"){
+        let torcedores = localStorage.getItem("torcedores");
+        document.write("<h1>Estoque: </h1>");
+        if(torcedores == null){
+            document.write("<h3>Ainda não há nenhum item no estoque</h3>");
+        }else{
+            torcedores = JSON.parse(torcedores);
+            torcedores.forEach(torcedor => {
+                document.write("<ul>");
+                document.write("<li>Nome: "+torcedor.nome+"</li>");
+                document.write("<li>Sexo: "+torcedor.sexo+"</li>");
+                document.write("<li>Nascimento: "+torcedor.nascimento+"</li>");
+                document.write("<li>CPF : "+torcedor.cpf+"</li>");
+                document.write("<li>Email: "+torcedor.email+"</li>");
+                document.write("<li>Telefone: "+torcedor.tel+"</li>");
+                document.write("<li>Endereço: "+torcedor.end+"</li>");
+                document.write("<li>Bairro: "+torcedor.bairro+"</li>");
+                document.write("<li>Cidade: "+torcedor.cidade+"</li>");
+                document.write("</ul>");
+            });
+        }
+    }
+}
+
+
+function validaTorcedor(f){
+
+    //Verifica se o nome tem pelo menos 3 letras
+    if(f.nome.value.length < 3){
+        alert("Não existe nome com menos de 3 letras!");
+        f.nome.focus();
+        return false;
+    }
+
+    //Verifica se CPF é válido
+    var verificaCpf = cpf.value;
+    var Soma;
+    var Resto;
+    Soma = 0;
+    
+    if (verificaCpf.length > 11 || verificaCpf.length < 11 ) {
+        alert("CPF invalido!");
+        return false;
+    }
+
+    if (verificaCpf == "00000000000"){ 
+        alert("CPF invalido!");
+        return false;
+        
+    }
+
+    for (i=1; i<=9; i++) 
+        Soma = Soma + parseInt(verificaCpf.substring(i-1, i)) * (11 - i);
+    Resto = (Soma * 10) % 11;
+
+    if ((Resto == 10) || (Resto == 11))  
+        Resto = 0;
+    
+    if (Resto != parseInt(verificaCpf.substring(9, 10)) ){
+        alert("CPF inválido!");
+        return false;
+        
+    }
+
+    Soma = 0;
+    for (i = 1; i <= 10; i++) 
+        Soma = Soma + parseInt(verificaCpf.substring(i-1, i)) * (12 - i);
+    Resto = (Soma * 10) % 11;
+
+    if ((Resto == 10) || (Resto == 11))  
+        Resto = 0;
+    
+    if (Resto != parseInt(verificaCpf.substring(10, 11) ) ){
+        alert("CPF inválido!")
+        return false;
+        
+    } 
+
+    //Verificação de telefone válido
+    if(f.telefone.value.length < 13 || f.telefone.value.length > 13){
+        alert("Telefone inválido");
+        return false;
+    }
+
+    else if (f.telefone.value.indexOf("()") != -1) {
+        alert("Telefone inválido!");
+        return false;
+    }
+
+    //Verificação de Nascimento
+    let hoje = new Date();
+    let verificaData = new Date(f.data.value);
+    if(verificaData > hoje ){
+        alert("Você não nasceu no futuro!");
+        return false;
+    }
+            
+    
+
+
+    //Verificação de email valido
+    if(f.email.value.indexOf("@") == -1 || f.email.value.indexOf(".") == -1 
+        || f.email.value.indexOf("com") == -1 || f.email.value == "" || f.email.value.indexOf("@.") != -1) {
+   
+        alert("Email inválido!");
+        f.email.focus();
+        return false;
+    }
+
+    //Verificação se campos estao vazios
+    if(f.endereco.value == "" || f.bairro.value == "" || f.cidade.value == "" || f.data.value == ""){
+        alert("Não pode ter campos vazios!");
+        return false;
+    }
+
+   
+    else{
+        cadastraTorcedor(f.nome, f.sexo, f.data, f.cpf, f.email, f.telefone, f.endereco, f.bairro, f.cidade);
+    }
+
+}
+
+
+
+function jogadoresPublico(){
+    if(typeof(Storage) !== "undefined"){
+        let jogadores = localStorage.getItem("jogadores");
+        document.write("<h1>Estoque: </h1>");
+        if(jogadores == null){
+            document.write("<h3>Ainda não há nenhum item no estoque</h3>");
+        }else{
+            jogadores = JSON.parse(jogadores);
+            jogadores.forEach(jogador => {
+                document.write("<ul>");
+                document.write("<li>Nome: "+jogador.nome+"</li>");
+                document.write("<li>nascimento: "+jogador.nascimento+"</li>");
+                document.write("<li>n: "+jogador.nº+"</li>");
+                document.write("<li>cidade: "+jogador.cidade+"</li>");       
+                document.write("<li>posicao: "+jogador.posicao+"</li>");
+                document.write("<li>contrato até: "+jogador.contratoAte+"</li>");
+                document.write("<li>status: "+jogador.status+"</li>");
+                document.write("</ul>");
+            });
+        }
+    }
 }
