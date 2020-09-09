@@ -6,12 +6,13 @@
         <link rel="stylesheet" href="Css/Trab.css"> <!--CONECTANDO O CSS COM O HTML-->
         <meta charset="UTF-8"><!--CONJUNTO DE CARACTERES-->
         <title>TopTeam</title>
+        <script src="JS/Trab.js"></script>
     </head>
     <head>
         
     </head>
 
-    <body>
+    <body form>
       
         <img id="planoFundo" src="Imagens/torcedorF.jpg" alt="falha...">
 
@@ -32,9 +33,9 @@
                     <li id="nomeCadastro">CADASTRO DE JOGADOR</li><br><br>
                     <li>
                         <label for="name">&nbsp;&nbsp;&nbsp;Nome:&nbsp;</label>
-                        <input type="text" size="33" id="name" name="cadJogador" max="31"> 
+                        <input type="text" size="33" id="nome" name="cadJogador" max="31"> 
                         
-                        <label for="name">&nbsp;&nbsp;&nbsp;CPF:&nbsp;</label>
+                        <label for="CPF">&nbsp;&nbsp;&nbsp;CPF:&nbsp;</label>
                         <input type="text" size="10" id="cpf" name="cadJogador" max="31"> 
 
                         <label for="name">&nbsp;&nbsp;&nbsp;Nascimento:&nbsp;</label>
@@ -59,19 +60,19 @@
                    <br><br>
                     <li>
                         <label for="name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cep:&nbsp;</label>
-                        <input type="text" size="24" id="end" name="nameA" max="31"> 
+                        <input type="text" size="24" id="cep" name="nameA" max="31"> 
                         
                         <label for="name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tel:&nbsp;</label>
-                        <input type="text" size="17" id="nº" name="nameA" max="31"> 
+                        <input type="text" size="17" id="tel" name="nameA" max="31"> 
 
                         <label for="name">&nbsp;Email:&nbsp;</label>
-                        <input type="text" size="18" id="nascimento" name="nameA" max="31"> 
+                        <input type="text" size="18" id="email" name="nameA" max="31"> 
 
                     </li>
                         <br><br>
                     <li>
                         <label for="name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Posição:&nbsp;</label>
-                        <select>
+                        <select id="posicao">
                              <option value="Goleiro">Goleiro</option>
                              <option value="Zagueiro">Zagueiro</option>
                              <option value="Lateral-Dir">Lateral-Dir</option>
@@ -80,19 +81,18 @@
                              <option value="Atacante">Atacante</option>
                             </select>
                         
-                        <label for="name">&nbsp;Salario R$:&nbsp;</label>
+                        <label for="salario">&nbsp;Salario R$:&nbsp;</label>
                         <input type="text" size="8" id="salario" name="nameA" max="31"> 
 
-                        <label for="name">&nbsp;Contrato até:&nbsp;</label>
+                        <label for="contrato">&nbsp;Contrato até:&nbsp;</label>
                         <input type="text" size="7" id="contrato" name="nameA" max="31"> 
 
-                        <label for="name">&nbsp;Status:&nbsp;</label>                        
-                        <select>
+                        <label for="status">&nbsp;Status:&nbsp;</label>                        
+                        <select id="status">
                              <option value="disponivel">Disponivel</option>
                              <option value="dpmedico">Dep. Medico</option>
-                             <option value="suspenso">Suspenso</option>
-                             
-                            </select> 
+                             <option value="suspenso">Suspenso</option>     
+                        </select> 
 
                     </li>
                     <br><br><br>
@@ -100,7 +100,8 @@
                     <li id="posiBotao">
                         <input type="reset" id="botao_clear" value="CORRIGIR">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <input type="button" id="botao_add" value="SALVAR" onclick="cadastro()"> 
+                        <input type="button" id="botao_add" value="SALVAR" onclick="cadastraJogador(nome, cpf, nascimento, end, nº, bairro, cidade, cep, tel,
+                        email, posicao, salario, contrato, status)"> 
                     </li>
     
                 </ul>
