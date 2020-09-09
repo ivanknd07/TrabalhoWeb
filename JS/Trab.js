@@ -189,9 +189,9 @@ function validaTorcedor(f){
 
     //Verifica se CPF é válido
     var verificaCpf = cpf.value;
-    var Soma;
-    var Resto;
-    Soma = 0;
+    var soma;
+    var resto;
+    soma = 0;
     
     if (verificaCpf.length > 11 || verificaCpf.length < 11 ) {
         alert("CPF invalido!");
@@ -205,32 +205,32 @@ function validaTorcedor(f){
     }
 
     for (i=1; i<=9; i++) 
-        Soma = Soma + parseInt(verificaCpf.substring(i-1, i)) * (11 - i);
-    Resto = (Soma * 10) % 11;
+        soma = soma + parseInt(verificaCpf.substring(i-1, i)) * (11 - i);
+    resto = (soma * 10) % 11;
 
-    if ((Resto == 10) || (Resto == 11))  
-        Resto = 0;
+    if ((resto == 10) || (resto == 11))  
+        resto = 0;
     
-    if (Resto != parseInt(verificaCpf.substring(9, 10)) ){
+    if (resto != parseInt(verificaCpf.substring(9, 10)) ){
         alert("CPF inválido!");
         return false;
         
     }
 
-    Soma = 0;
+    soma = 0;
     for (i = 1; i <= 10; i++) 
-        Soma = Soma + parseInt(verificaCpf.substring(i-1, i)) * (12 - i);
-    Resto = (Soma * 10) % 11;
+        soma = soma + parseInt(verificaCpf.substring(i-1, i)) * (12 - i);
+    resto = (soma * 10) % 11;
 
-    if ((Resto == 10) || (Resto == 11))  
-        Resto = 0;
+    if ((resto == 10) || (resto == 11))  
+        resto = 0;
     
-    if (Resto != parseInt(verificaCpf.substring(10, 11) ) ){
+    if (resto != parseInt(verificaCpf.substring(10, 11) ) ){
         alert("CPF inválido!")
         return false;
         
     } 
-
+     
     //Verificação de telefone válido
     if(f.telefone.value.length < 13 || f.telefone.value.length > 13){
         alert("Telefone inválido");
