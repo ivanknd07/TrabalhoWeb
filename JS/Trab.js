@@ -81,3 +81,44 @@ function listarJogadores(){
         }
     }
 }
+
+function login(){
+    var log = document.getElementById("emailSenha");
+
+    var veri = 0;
+    var i;
+    //pegando os valores dos dados
+    var email = document.getElementById("email").value;
+    var senha = document.getElementById("senha").value;
+
+
+    if (email=="admin@gmail.com" && senha=="12345678") {
+        window.location="adm.html";
+        done = 1;
+    }
+    else if(veri == 0){
+        alert("Usuario não existe");
+    }
+}
+
+
+function validacao(f){
+    //Verificação de email valido
+    if(f.email.value.indexOf("@") == -1 || f.email.value.indexOf(".") == -1 
+        || f.email.value.indexOf("com") == -1 || f.email.value == "" || f.email.value.indexOf("@.") != -1) {
+   
+        alert("Email ou senha inválido!");
+        f.email.focus();
+        return false;
+    }
+
+    else if(f.senha.value.length < 8){
+        alert("Email ou senha inválido!");
+        f.senha.focus();
+        return false;
+    }
+    else{
+        login();
+    }
+
+}
