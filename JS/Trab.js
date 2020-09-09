@@ -30,27 +30,28 @@ function cadastraJogador(nome, cpf, nascimento, end, nº, bairro, cidade, cep, t
 function listarJogadores(){
     if(typeof(Storage) !== "undefined"){
         let jogadores = localStorage.getItem("jogadores");
-        document.write("<h1>Estoque: </h1>");
+     // document.write("<h1>Estoque: </h1>");
         if(jogadores == null){
             document.write("<h3>Ainda não há nenhum item no estoque</h3>");
         }else{
             jogadores = JSON.parse(jogadores);
             jogadores.forEach(jogador => {
-                document.write("<ul>");
-                document.write("<li>Nome: "+jogador.nome+"</li>");
-                document.write("<li>CPF : "+jogador.cpf+"</li>");
-                document.write("<li>nascimento: "+jogador.nascimento+"</li>");
-                document.write("<li>end: "+jogador.end+"</li>");
-                document.write("<li>n: "+jogador.nº+"</li>");
-                document.write("<li>bairro: "+jogador.bairro+"</li>");
-                document.write("<li>cidade: "+jogador.cidade+"</li>");
-                document.write("<li>cep: "+jogador.cep+"</li>");
-                document.write("<li>tel: "+jogador.tel+"</li>");
-                document.write("<li>email: "+jogador.email+"</li>");
-                document.write("<li>posicao: "+jogador.posicao+"</li>");
-                document.write("<li>contrato até: "+jogador.contratoAte+"</li>");
-                document.write("<li>status: "+jogador.status+"</li>");
-                document.write("</ul>");
+                document.getElementById("table").innerHTML += 
+                "<tr>"+
+                "<td>"+jogador.nome+"</td>"+
+                "<td>"+jogador.cpf+"</td>"+
+                "<td>"+jogador.nascimento+"</td>"+
+                "<td>"+jogador.end+"</td>"+
+                "<td>"+jogador.nº+"</td>"+
+                "<td>"+jogador.bairro+"</td>"+
+                "<td>"+jogador.cidade+"</td>"+
+                "<td>"+jogador.cep+"</td>"+
+                "<td>"+jogador.tel+"</td>"+
+                "<td>"+jogador.email+"</td>"+
+                "<td>"+jogador.posicao+"</td>"+
+                "<td>"+jogador.contratoAte+"</td>"+
+                "<td>"+jogador.status+"</td>"+
+                "</tr>"
             });
         }
     }

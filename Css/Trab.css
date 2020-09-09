@@ -614,3 +614,30 @@
     color:white;
 
 }
+
+table{
+    position: relative;
+    height: 5%;
+    text-align: center;
+    margin-top:absolute;
+    width: 100%;
+    margin-left: 1px;
+    margin-right: 8px;
+
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+}
+
+td {
+    max-width: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+  }
