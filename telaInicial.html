@@ -4,6 +4,7 @@
     <head>
         <meta charset="UTF-8"><!--CONJUNTO DE CARACTERES-->
         <link rel="stylesheet" href="Css/peq.css"> <!--CONECTANDO O CSS COM O HTML-->
+        <script src="JS/Trab.js"></script>
         
         
 
@@ -35,7 +36,7 @@
                 <div class="row"><!-- LINHA 2-->
                     <div class="col-md-8 divMenuNav">
                         <ul class="list-group list-group-horizontal divlistaMenu">   
-                            <li id="divlistaMenu">&nbsp;&nbsp;&nbsp;&nbsp;SEJA TORCEDOR </li>                        
+                           <a id="inicio" href="cadastroTor.html"><li id="divlistaMenu">&nbsp;&nbsp;&nbsp;&nbsp;SEJA TORCEDOR </li></a>                
                             <li id="divlistaMenu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             &nbsp;HISTORIA</li>
                             <li id="divlistaMenu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CONQUISTAS</li>
@@ -49,9 +50,12 @@
                     <div class="col-md-1 divMenuNav">
                         <ul class="list-group list-group-vertical divLateral">   
                                 <li id="nomemenu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MENU</li>              
-                                <li id="itensMenu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                 &nbsp;&nbsp;&nbsp;JOGADORES</li>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MENU</li>   
+
+
+
+                                <a href="listJogadoresPub.html"><li id="itensMenu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 &nbsp;&nbsp;&nbsp;JOGADORES</li></a>
                                 <li id="itensMenu">&nbsp;&nbsp;&nbsp;&nbsp;
                                 &nbsp;COMISSÃO TECNICA</li>
                                 <li id="itensMenu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -60,13 +64,14 @@
                                
                                 <br><br>
 
+                                <form name= "envio">
                                 <li id="Login"><!--LOGIN-->
-                                    <form name= "envio">
+                                    
                                     <label for="email">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email:</label>                    
-                                    <input type="text" size="14" id="enviar"><br>
+                                    <input type="text" size="14" id="email"><br>
                                 
                                     <label for="senha">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Senha:&nbsp;</label>                    
-                                    <input type="text" size="14" id="enviar">
+                                    <input type="text" size="14" id="senha">
                                 </li>
 
                                 <li id="botaoRecSenha"><br><br>                
@@ -74,8 +79,9 @@
                                 </li>
                 
                                 <li id="botaoacesso"><br><br> 
-                                    <input type="button" class="btn-sm" id="aces" value="Acesso">
-                                </li> 
+                                    <input type="button" class="btn-sm" id="aces"  value="Acesso" onclick="validacao(form)">
+                                </li>
+                                </form> 
                         </ul>
                     </div>
 
@@ -85,14 +91,14 @@
                         <ul class="list-group-vertical divAncora">   
                                 <li id="nomemenu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Acesse</li>              
-                                <li id="itensAcesso">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                 &nbsp;&nbsp;Globo Esporte</li>
-                                <li id="itensAcesso">&nbsp;&nbsp;&nbsp;&nbsp;
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cartola</li>
-                                <li id="itensAcesso">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fox Sport</li>                
-                                <li id="itensAcesso">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Espn</li>      
+                                <a href="https://globoesporte.globo.com/"><li id="itensAcesso">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 &nbsp;&nbsp;Globo Esporte</li></a>
+                                <a href="https://globoesporte.globo.com/cartola-fc/"><li id="itensAcesso">&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cartola</li></a>
+                                <a href="https://www.foxsports.com.br/br/"><li id="itensAcesso">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fox Sport</li>  </a>              
+                                <a href="https://www.espn.com.br/"><li id="itensAcesso">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Espn</li></a>     
                          </ul>
                     </div>
                     
