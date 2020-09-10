@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Css/Trab.css"> <!--CONECTANDO O CSS COM O HTML-->
+    
+    <script src="JS/jquery-3.5.1.slim.min.js"></script>
+
+    <script src="JS/popper.min.js"></script>
+
+    <script src="JS/bootstrap.min.js"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Jogadores</title>
+    <script src="JS/Trab.js"></script>
+</head>
+<body onload="listarJogadores()">
+    <img id="planoFundo" src="Imagens/torcedorF.jpg" alt="falha...">
+
+    <ul  id="nomeTimeCadJogador">
+        <li> TOP TEAM FUTEBOL CLUB </li>
+    </ul>
+
+    <ul id="escudoCadJogador">                 
+        <li id="escudoCadJogador"> <img src="Imagens/2.png" alt="falha"> </li>                 
+  </ul>
+  <div id="cadastroJog"> 
+    <table class= "container" id="table"> 
+        <tr>
+            <th> Nome </th>
+            <th> CPF </th>
+            <th> Nascimento </th>
+            <th> Endereco </th>
+            <th> numero </th>
+            <th> bairro </th>
+            <th> cidade </th>
+            <th> cep </th>
+            <th> telefone </th>
+            <th> email </th>
+            <th> posicao </th>
+            <th> Salario</th>
+            <th> contrato </th>
+            <th> status </th>
+        </tr>
+    </table>
+    <li id="botaovoltar" >
+        <input type="button" id="botao_amd" value="VOLTAR para ADM" onclick="window.location='adm.html' ">
+        <input type="button" id="botao_amd" value="apagar todos os cadastros" onclick="limpar()">
+    </li>
+  </div>
+        
+</body>
+</html>

@@ -4,6 +4,7 @@
         <title> topteam</title> 
         <meta charset="UTF-8"><!--CONJUNTO DE CARACTERES-->
         <link rel="stylesheet" href="Css/Trab.css"> <!--CONECTANDO O CSS COM O HTML-->
+        <script src="JS/Trab.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <!-------------------------------------- CONECTANDO O BOOTSTRAP --------------------------------------------------->
         <link rel="stylesheet" href="Css/bootstrap.min.css">
@@ -14,7 +15,7 @@
 
         <script src="JS/bootstrap.min.js"></script>
 
-       
+        
 <!----------------------------------------------------------------------------------------------------------------->        
     </head>
   <!--  <head>
@@ -32,7 +33,7 @@
         <nav id="menusuperior"><!--NAV PARA O MENU SUPERIOR-->
             <ul>                   
                     
-                    <li><a id="inicio"> &nbsp;SEJA TORCEDOR &nbsp;</a></li>                        
+                    <li><a id="inicio" href="cadastroTor.html"> &nbsp;SEJA TORCEDOR &nbsp;</a></li>                        
                     <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HISTORIA</li>
                     <li>&nbsp;CONQUISTAS</li>
             </ul>
@@ -69,8 +70,8 @@
         <ul id="menulateral"><!--NAV PARA O MENU LATERAL-->               
                 <li id="nomemenu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;&nbsp;&nbsp;&nbsp;MENU</li>                  
-                <li id="menulateralItens">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JOGADORES</li>
+                <a href="listJogadoresPub.html"><li id="menulateralItens">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JOGADORES</li></a>
                 <li id="menulateralItens">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;COMISSÃO TECNICA</li>
                 <li id="menulateralItens">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -85,23 +86,26 @@
             <br><br>
             
             <ul id="emalEsenha">
-
+    
+                <form name= "envio">
                 <li id="emailSenha">
-                    <form name= "envio">
+                    
                     <label for="email">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email:&nbsp;</label>                    
-                    <input type="text" size="14" id="enviar"><br>
+                    <input type="text" size="14" id="email"><br>
                 
                     <label for="senha">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Senha:</label>                    
-                    <input type="text" size="14" id="enviar">
+                    <input type="password" size="14" id="senha">
                 </li>
+                
                 
                  <li id="botaocadastro"><br><br>                
                     <input type="button" class="btn-sm" id="cad" value="Recuperar Senha">
                 </li>
 
                 <li id="botaoacesso"><br><br> 
-                    <input type="button" class="btn-sm" id="aces" value="Acesso">
-                </li>                
+                  <input type="button" class="btn-sm" id="aces"  value="Acesso" onclick="validacao(form)">
+                </li>    
+                </form>             
                
             </ul>
 

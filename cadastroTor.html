@@ -4,6 +4,7 @@
     <head>
         <meta charset="UTF-8"><!--CONJUNTO DE CARACTERES-->
         <link rel="stylesheet" href="Css/Trab.css"> <!--CONECTANDO O CSS COM O HTML-->
+        <script src="JS/Trab.js"></script>
         <title>topTeam</title>
     </head>
     <body>
@@ -18,40 +19,40 @@
                     <br><br>
                     <li>
                          <label for="name">&nbsp;&nbsp;&nbsp;Nome:&nbsp;</label>
-                         <input type="text" size="33" id="name" name="nameA" max="31">
-                         <label for="name">&nbsp;&nbsp;Sexo:</label>
-                         <select>
+                         <input type="text" size="33" id="nome" name="nameA" max="31">
+                         <label for="sexo">&nbsp;&nbsp;Sexo:</label>
+                         <select id = "sexo">
                             <option value="masculino">Masculino</option>
                             <option value="feminino">Feminino</option>                            
                            </select>
-                         <label for="name">D.N:&nbsp;</label>
-                         <input type="text" size="12" id="name" name="nameA" max="31">
+                         <label for="data">D.N:&nbsp;</label>
+                         <input type="date" size="12" id="data" name="data" max="31">
                     </li>
                     <br><br>
                     <li>
-                     <label for="name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CPF:&nbsp;</label>
-                     <input type="text" size="24" id="name" name="nameA" max="31">
-                     <label for="name">&nbsp;Email:</label>
-                     <input type="text" size="15" id="name" name="nameA" max="31">
-                     <label for="name">&nbsp;&nbsp;&nbsp;&nbsp;Tel:&nbsp;</label>
-                     <input type="text" size="12" id="name" name="nameA" max="31">
+                     <label for="CPF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CPF:&nbsp;</label>
+                     <input type="text" size="24" id="cpf" name="CPF" max="31">
+                     <label for="email">&nbsp;Email:</label>
+                     <input type="text" size="15" id="email" name="email" max="31">
+                     <label for="tel">&nbsp;&nbsp;&nbsp;&nbsp;Tel:&nbsp;</label>
+                     <input type="text" size="12" id="telefone" name="telefone" max="31" placeholder="(xx)xxxxxxxxx">
                     </li>
                     <br><br>
                     <li>
                          <label for="name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;End:&nbsp;</label>
-                         <input type="text" size="24" id="name" name="nameA" max="31">
+                         <input type="text" size="24" id="endereco" name="endereco" max="31">
                          <label for="name">&nbsp;Bairro:&nbsp;</label>
-                         <input type="text" size="15" id="name" name="nameA" max="31">
+                         <input type="text" size="15" id="bairro" name="bairro" max="31">
                          <label for="name">Cidade:</label>
-                         <input type="text" size="10" id="name" name="nameA" max="31">
+                         <input type="text" size="10" id="cidade" name="cidade" max="31">
                     </li>
                     <br><br>
                     <li id="posiBotao">
-                        <input type="button"id="botaoVoltar" value="VOLTAR">
+                        <input type="button" id="botaoVoltar" value="VOLTAR" onclick="window.location='Trab.html'">
                         <a href="inicio"></a>
                         <input type="reset" id="botao_clear" value="CORRIGIR">
                         
-                       <input type="button" id="botao_add" value="SALVAR" onclick="cadastro()"> 
+                       <input type="button" id="botao_add" value="SALVAR" onclick="validaTorcedor(form)"> 
 
                     </li>
 
