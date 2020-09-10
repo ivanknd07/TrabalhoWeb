@@ -38,6 +38,11 @@ function cadastraJogador(nome, cpf, nascimento, end, n, bairro, cidade, cep, tel
         alert("Seu jogador é um viajante do tempo? Pois ele nasceu no futuro")
     }else if(dat2 > dat){
         alert("você não pode contratar um jogador que não nasceu ainda, verifique sua data de nascimento");
+    }else if(email.value.indexOf("@") == -1 || email.value.indexOf(".") == -1 
+        || email.value.indexOf("com") == -1 || email.value == "" || email.value.indexOf("@.") != -1) {
+        alert("Email inválido!");
+        email.focus();
+        return false;
     }else{
         if(typeof(Storage) !== "undefined"){
             let jogadores = localStorage.getItem("jogadores");
@@ -55,9 +60,8 @@ function cadastraJogador(nome, cpf, nascimento, end, n, bairro, cidade, cep, tel
 function listarJogadores(){
     if(typeof(Storage) !== "undefined"){
         let jogadores = localStorage.getItem("jogadores");
-     // document.write("<h1>Estoque: </h1>");
         if(jogadores == null){
-            document.write("<h3>Ainda não há nenhum item no estoque</h3>");
+            alert("sem jogadores cadastrados!");
         }else{
             jogadores = JSON.parse(jogadores);
             jogadores.forEach(jogador => {
@@ -155,23 +159,24 @@ function cadastraTorcedor(nome, sexo, nascimento, cpf, email, tel, end, bairro, 
 function listarTorcedores(){
     if(typeof(Storage) !== "undefined"){
         let torcedores = localStorage.getItem("torcedores");
-        document.write("<h1>Estoque: </h1>");
         if(torcedores == null){
-            document.write("<h3>Ainda não há nenhum item no estoque</h3>");
+            alert("ainda não ha torcedores cadastrados.");
         }else{
             torcedores = JSON.parse(torcedores);
             torcedores.forEach(torcedor => {
-                document.write("<ul>");
-                document.write("<li>Nome: "+torcedor.nome+"</li>");
-                document.write("<li>Sexo: "+torcedor.sexo+"</li>");
-                document.write("<li>Nascimento: "+torcedor.nascimento+"</li>");
-                document.write("<li>CPF : "+torcedor.cpf+"</li>");
-                document.write("<li>Email: "+torcedor.email+"</li>");
-                document.write("<li>Telefone: "+torcedor.tel+"</li>");
-                document.write("<li>Endereço: "+torcedor.end+"</li>");
-                document.write("<li>Bairro: "+torcedor.bairro+"</li>");
-                document.write("<li>Cidade: "+torcedor.cidade+"</li>");
-                document.write("</ul>");
+                document.getElementById("table").innerHTML += 
+                "<tr>"+
+                "<td>"+torcedor.nome+"</td>"+
+                "<td>"+torcedor.sexo+"</td>"+
+                "<td>"+torcedor.nascimento+"</td>"+
+                "<td>"+torcedor.cpf+"</td>"+
+                "<td>"+torcedor.email+"</td>"+
+                "<td>"+torcedor.tel+"</td>"+
+                "<td>"+torcedor.end+"</td>"+
+                "<td>"+torcedor.bairro+"</td>"+
+                "<td>"+torcedor.cidade+"</td>"+
+                "</tr>"
+           
             });
         }
     }
@@ -280,22 +285,31 @@ function validaTorcedor(f){
 function jogadoresPublico(){
     if(typeof(Storage) !== "undefined"){
         let jogadores = localStorage.getItem("jogadores");
-        document.write("<h1>Estoque: </h1>");
         if(jogadores == null){
-            document.write("<h3>Ainda não há nenhum item no estoque</h3>");
+            alert("sem jogadores cadastrados!");
         }else{
             jogadores = JSON.parse(jogadores);
             jogadores.forEach(jogador => {
-                document.write("<ul>");
-                document.write("<li>Nome: "+jogador.nome+"</li>");
-                document.write("<li>nascimento: "+jogador.nascimento+"</li>");
-                document.write("<li>n: "+jogador.nº+"</li>");
-                document.write("<li>cidade: "+jogador.cidade+"</li>");       
-                document.write("<li>posicao: "+jogador.posicao+"</li>");
-                document.write("<li>contrato até: "+jogador.contratoAte+"</li>");
-                document.write("<li>status: "+jogador.status+"</li>");
-                document.write("</ul>");
+                document.getElementById("table").innerHTML += 
+                "<tr>"+
+                "<td>"+jogador.nome+"</td>"+
+                "<td>"+jogador.nascimento+"</td>"+
+                "<td>"+jogador.end+"</td>"+
+                "<td>"+jogador.bairro+"</td>"+
+                "<td>"+jogador.cidade+"</td>"+
+                "<td>"+jogador.posicao+"</td>"+
+                "<td>"+jogador.contratoAte+"</td>"+
+                "<td>"+jogador.status+"</td>"+
+                "</tr>"
+                
             });
         }
     }
+}
+
+function limpar(){
+    alert("seus cadastros foram apagados!");
+    localStorage.clear();
+    document.location.reload(true);
+    
 }

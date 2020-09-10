@@ -616,10 +616,11 @@
 }
 
 table{
-    position: relative;
+    background-color: antiquewhite;
+    position: absolute;
     height: 5%;
     text-align: center;
-    margin-top:absolute;
+    margin-top:320px;
     width: 100%;
     margin-left: 1px;
     margin-right: 8px;
@@ -640,4 +641,8 @@ td {
     overflow: hidden;
     text-overflow: ellipsis;
 
+}
+
+#botaovoltar{
+    position: absolute;
 }
