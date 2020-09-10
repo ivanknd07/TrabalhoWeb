@@ -153,7 +153,7 @@ function cadastraTorcedor(nome, sexo, nascimento, cpf, email, tel, end, bairro, 
     }
     else alert("Seu navegador opera em uma versão antiga, não é possivel carregar uma aplicação!");
 
-    window.location="listTorcedores.html";
+    window.location="telaInicial.html";
 }
 
 function listarTorcedores(){
