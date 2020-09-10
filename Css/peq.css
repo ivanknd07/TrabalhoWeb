@@ -1,0 +1,259 @@
+/** {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*.teste-div {/*USANDO PONTO, DEVIDO SER UMA CLASS
+    position: relative;
+    margin: 0 auto;
+    height: 500px;
+    height: 500px;
+
+
+}
+*/
+
+.container {
+    border: 3px solid yellowgreen;
+    min-height: 500%;/*ALTURA MINIMA*/
+   /* min-width: 80%;*/
+    background-image: url("campnou");
+    
+        
+}
+
+.divNome{    
+    margin-left:37%;/*MARGEM ESQUERDA*/
+    width: 100 px;/*ALTURA*/
+    height: 300px;/*LARGURA*/
+    padding:0%;
+    margin-top: 0%;
+    color:black;
+    font-size: 20px;
+    position:absolute;   
+    text-shadow: 1px 1px 1px orange, -1px 1px 1px orange,1px -1px 1px orange,1px 1px 1px orange,
+    -1px -1px 1px orange;/*EFEITO COM SOMBRAS PARA DA O CONTORNO DO NOME DO TIME*/
+}
+.divEscudoImg {
+    margin-left: 40%;/*MARGEM ESQUERDA*/
+    margin-top: -5%; /*MARGEM EM CIMA*/
+    width:45px;  /*LARGURA*/
+    width: 0%;/*ALTURA*/
+    position: absolute;
+}
+/*-------------------------------- DIV MENU NAV (SEJA SORCIO / HISTORIA / CONQUISTAS)--------------------------------*/
+
+.divlistaMenu {
+    list-style: none;/*REMOVENDO OS PONTOS DOS ITENS DA LISTA*/
+    position: absolute;      
+    top: 25%;
+    margin-left: 70%;  
+}
+
+#divlistaMenu{
+    display:inline-block;
+    border-radius: 5px;          
+    background-color:orange;/*COR DE FUNDO*/
+    border-color: darkslateblue;
+    margin: 15px;
+    height: 27px;/*ALTURA*/
+     width: 150px; /*LARGURA*/
+    cursor: pointer;/*PRA APARECER A MÃO DO MOUSE*/   
+    color: black;   
+}
+#divlistaMenu:hover{
+    background-color: white;
+    border-bottom:solid 5px;
+    border-color: orange;
+}
+
+/*------------------------------------------------- DIV MENU LATERAL-----------------------------------------------*/
+.divLateral{
+    list-style: none;/*REMOVENDO OS PONTOS DOS ITENS DA LISTA*/
+    position: absolute;      
+    top: 50px;
+    margin-left: 50%;   
+    padding:2px;/*ESPAÇAMENTO VERTICAL ENTRE OS ITENS DA LISTA*/
+    height: 350px;/*ALTURA*/
+    width:  290px; /*LARGURA*/
+    background-color:black;
+}
+
+#nomeMenu{
+    list-style: none;/*PRA SUMIR COM OS MARCADORES DAS LISTAS*/
+    color: chartreuse;
+    margin-top: 5%;
+    margin:5px;/*ESPAÇAMENTO VERTICAL ENTRE OS ITENS DA LISTA*/
+    font-family: "arial";
+    font-size: 18px;
+    color:white; 
+    border-bottom:solid 2px;
+    border-color: orange;
+    width: 75%;
+    margin-left: 35px;
+}
+
+#itensMenu{
+    margin: 2%;
+    height: 25px;/*ALTURA*/
+    width: 200;/**LARGURA*/
+    margin-left: 15%;
+    border: solid 1px;
+    color:black;
+    background-color:orange;
+    cursor: pointer;/*PRA APARECER A MÃO DO MOUSE*/
+}
+#itensMenu:hover{
+    background-color: white;
+    border-color: whites;
+}
+
+#Login{
+    display:ruby;
+    list-style: none;/*REMOVENDO OS PONTOS DOS ITENS DA LISTA*/
+    position: absolute;        
+    top: 200px;
+    left: 2%;
+    margin:-5px;    
+    color: orange;
+    font-family: Arial, Helvetica, sans-serif;
+    size: 10px;
+}
+
+#botaoRecSenha{
+    list-style: none;/*Tira o ponto da lista*/
+    display: ruby;
+    position: absolute;
+    color:white;    
+    margin: 0px;
+    left: 15%;
+    top: 260px;
+    color: white;
+    cursor: pointer;
+    width: 40px; /*LARGURA*/
+    height: 15px;/*ALTURA*/
+    border-color: orange;
+    font-size: 10px;
+}
+
+
+#botaoacesso{
+    position: absolute;
+    color:white;  
+    list-style: none;/*Tira o ponto da lista*/
+    display: ruby;
+    margin-left: 64%;
+    top: 242px;
+    color: black; 
+    cursor: pointer;  
+    border-width:1px;
+    width: 50px; /*LARGURA*/
+    height: 10px;/*ALTURA*/
+}
+
+
+/*------------------------------------------------- DIV LINKS DE ACESSO-----------------------------------------------*/
+.divAncora{
+    list-style: none;/*REMOVENDO OS PONTOS DOS ITENS DA LISTA*/
+    position: absolute;      
+    margin-top: 1450%;
+    margin-left: -110%;   
+    padding: 2px;/*ESPAÇAMENTO VERTICAL ENTRE OS ITENS DA LISTA*/
+    height: 350px;/*ALTURA*/
+    width:  290px; /*LARGURA*/
+    background-color: black;
+}
+
+#itensAcesso{
+    margin: 15%;
+    height: 25px;/*ALTURA*/
+    width: 200;/**LARGURA*/
+    margin-left: 15%;
+    border: solid 1px;
+    color:black;
+    background-color:orange;
+    cursor: pointer;/*PRA APARECER A MÃO DO MOUSE*/
+    text-shadow: 1px 1px 1px blue, -1px 1px 1px blue,1px -1px 1px blue,1px 1px 1px blue,
+    -1px -1px 1px blue;/*EFEITO COM SOMBRAS PARA DA O CONTORNO DO NOME DO TIME*/ 
+}
+#itensAcesso:hover{
+     background-color: white;
+     border-bottom:solid 3px;
+     border-color:green;
+}
+/*--------------------------------------------------- DIV SLIDE-------------------------------------------------------*/
+.divSlide{
+    list-style: none;/*REMOVENDO OS PONTOS DOS ITENS DA LISTA*/
+    position: absolute;      
+    margin-top: 165%;
+    margin-left: 1200%;   
+    padding: 2px;/*ESPAÇAMENTO VERTICAL ENTRE OS ITENS DA LISTA*/
+    height: 250x;/*ALTURA*/
+    width:  600px; /*LARGURA*/
+    border: solid 1px blue;
+
+}
+/*------------------------------------ CONFIGURANDO O TITULO E A MATERIA DO SLIDE ----------------------------------*/
+#tituloF{
+    color:red;
+    margin-top: -8%;
+    margin-left:-70%;
+    width:  600px; /*LARGURA*/
+    position: absolute;
+}
+
+#paragrafoF{
+    color:black;
+    margin-top: 0%;
+    margin-left:-35%;
+    width:  600px; /*LARGURA*/
+    position: absolute;
+    font-size: 10x;
+    text-shadow: 1px 1px 1px orange, -1px 1px 1px orange,1px -1px 1px orange,1px 1px 1px orange,
+    -1px -1px 1px orange;/*EFEITO COM SOMBRAS PARA DA O CONTORNO DO NOME DO TIME*/ 
+}
+
+#tituloMessi{
+    color:blue;
+    margin-top: -8%;
+    margin-left:-70%;
+    width:  600px; /*LARGURA*/
+    position: absolute;
+    text-shadow: 1px 1px 1px orange, -1px 1px 1px orange,1px -1px 1px orange,1px 1px 1px orange,
+    -1px -1px 1px orange;/*EFEITO COM SOMBRAS PARA DA O CONTORNO DO NOME DO TIME*/ 
+
+}
+#paragrafoMessi{
+    color:black;
+    margin-top: 0%;
+    margin-left:-20%;
+    width:  600px; /*LARGURA*/
+    position: absolute;
+    font-size: 10x;
+    text-shadow: 1px 1px 1px orange, -1px 1px 1px orange,1px -1px 1px orange,1px 1px 1px orange,
+    -1px -1px 1px orange;/*EFEITO COM SOMBRAS PARA DA O CONTORNO DO NOME DO TIME*/ 
+}
+/*------------------------------------------------------------------------------------------------------------*/
+#tituloBrasi{
+    color: white;
+    margin-top: -8%;
+    margin-left:-70%;
+    width:  600px; /*LARGURA*/
+    position: absolute;
+    text-shadow: 1px 1px 1px black, -1px 1px 1px black,1px -1px 1px black,1px 1px 1px black,
+    -1px -1px 1px black;/*EFEITO COM SOMBRAS PARA DA O CONTORNO DO NOME DO TIME*/ 
+
+}
+#paragrafoBrasil{
+    color:white;
+    margin-top: 0%;
+    margin-left:-20%;
+    width:  600px; /*LARGURA*/
+    position: absolute;
+    font-size: 8x;
+    text-shadow: 1px 1px 1px black, -1px 1px 1px black,1px -1px 1px black,1px 1px 1px black,
+    -1px -1px 1px black;/*EFEITO COM SOMBRAS PARA DA O CONTORNO DO NOME DO TIME*/ 
+ 
+
+}
+

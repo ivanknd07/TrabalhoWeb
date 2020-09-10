@@ -1,5 +1,5 @@
 @charset "UTF-8";/* PARA QUESTÕES DE ACENTUAÇAÕ*/
-@media  screen and(max-width: 900px){
+@media  screen and (min-width: 320px) and (max-width: 568px){
     body{
         background:red;
     }
@@ -28,12 +28,12 @@
     text-shadow: 1px 1px 1px orange, -1px 1px 1px orange,1px -1px 1px orange,1px 1px 1px orange,
     -1px -1px 1px orange;/*EFEITO COM SOMBRAS PARA DA O CONTORNO DO NOME DO TIME*/
     
+}   
     
-    
-}
+
 #escudoImg{/*POSICIONANDNO O ESCUDO DO TIME*/   
     
-    margin-left: 50%x;/*MARGEM ESQUERDA*/
+    margin-left: 50%;/*MARGEM ESQUERDA*/
     margin-top: 0%; /*MARGEM EM CIMA*/
     width: 45px;  /*LARGURA*/
     width: 0%;/*ALTURA*/
