@@ -22,12 +22,12 @@
     </head>
     
     <body>
-            <div class="container" img src="Imagens/campo.jpg" alt="falha">
-           
+            <div class="container" >
+              <img src="Imagens/campo.jpg" id="planoDeFundo" alt="Falha...">
+              
                 <div class="row"><!-- LINHA 1 -->
                     <div class="col-md-5 divNome"><!-- COLUNAS -->
-                        
-                            <h5>&nbsp;&nbsp;&nbsp;TOP TEAM FUTEBOL CLUB  </h5>   
+                            <h5>&nbsp;&nbsp;&nbsp;TOP TEAM FUTEBOL CLUB</h5>   
                             <div id="divEscudoImg "> <img src="Imagens/2.png" alt=""></div>                               
                     </div>                              
                 </div>          
@@ -35,10 +35,10 @@
                 <div class="row"><!-- LINHA 2-->
                     <div class="col-md-8 divMenuNav">
                         <ul class="list-group list-group-horizontal divlistaMenu">   
-                            <li id="divlistaMenu">&nbsp;&nbsp;&nbsp;&nbsp;SEJA TORCEDOR </li>                        
-                            <li id="divlistaMenu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            &nbsp;HISTORIA</li>
-                            <li id="divlistaMenu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CONQUISTAS</li>
+                           <a href="cadastroTor.html"><li id="divlistaMenu">&nbsp;&nbsp;&nbsp;&nbsp;SEJA TORCEDOR </li></a>                        
+                            <a href=""><li id="divlistaMenu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;HISTORIA</li></a> 
+                            <a href=""><li id="divlistaMenu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CONQUISTAS</li></a> 
                         </ul>
                     </div>
                 </div>
@@ -50,13 +50,13 @@
                         <ul class="list-group list-group-vertical divLateral">   
                                 <li id="nomemenu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MENU</li>              
-                                <li id="itensMenu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                 &nbsp;&nbsp;&nbsp;JOGADORES</li>
-                                <li id="itensMenu">&nbsp;&nbsp;&nbsp;&nbsp;
-                                &nbsp;COMISSÃO TECNICA</li>
-                                <li id="itensMenu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                &nbsp;&nbsp;&nbsp;DIRETORIA</li>                
-                                <li id="itensMenu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PATROCINADORES</li>
+                                <a id="texDec" href="listJogadoresPub.html"><li id="itensMenu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 &nbsp;&nbsp;&nbsp; JOGADORES </li></a>
+                                <a id="texDec" href=""><li id="itensMenu">&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;COMISSÃO TECNICA</li></a>
+                                <a id="texDec" href=""><li id="itensMenu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;DIRETORIA</li></a>             
+                                <a id="texDec" href=""><li id="itensMenu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PATROCINADORES</li></a>
                                
                                 <br><br>
 
@@ -74,7 +74,7 @@
                                 </li>
                 
                                 <li id="botaoacesso"><br><br> 
-                                    <input type="button" class="btn-sm" id="aces" value="Acesso">
+                                    <input type="button" class="btn-sm" id="aces" value="Acesso" onclick="validacao(form)">
                                 </li> 
                         </ul>
                     </div>
@@ -84,15 +84,19 @@
                     <div class="col-md-1 divMenuNav">
                         <ul class="list-group-vertical divAncora">   
                                 <li id="nomemenu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Acesse</li>              
-                                <li id="itensAcesso">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                 &nbsp;&nbsp;Globo Esporte</li>
-                                <li id="itensAcesso">&nbsp;&nbsp;&nbsp;&nbsp;
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cartola</li>
-                                <li id="itensAcesso">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fox Sport</li>                
-                                <li id="itensAcesso">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Espn</li>      
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Acesse</li>   
+
+                                <a id="texDec" href="https://globoesporte.globo.com/" target="_blank"><li id="itensAcesso">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 &nbsp;&nbsp;Globo Esporte</li></a>
+
+                                <a id="texDec" href="https://globoesporte.globo.com/cartola-fc/" target="_blank"><li id="itensAcesso">&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cartola</li></a> 
+
+                               <a id="texDec" href="https://www.foxsports.com.br/br/" target="_blank"><li id="itensAcesso">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fox Sport</li></a>   
+
+                                <a id="texDec" href="https://www.espn.com.br/" target="_blank"><li id="itensAcesso">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Espn</li></a>       
                          </ul>
                     </div>
                     
@@ -161,7 +165,7 @@
                         </div>
                 
 
-           teste
+          
        
 
            

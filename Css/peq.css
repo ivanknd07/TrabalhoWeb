@@ -15,11 +15,16 @@
 
 .container {
     border: 3px solid yellowgreen;
-    min-height: 500%;/*ALTURA MINIMA*/
+    min-height: 50%;/*ALTURA MINIMA*/
    /* min-width: 80%;*/
-    background-image: url("campnou");
-    
-        
+         
+}
+#planoDeFundo {
+    background-image: url("campo"); 
+    width: 1360px;/*LARGURA*/
+    height: 1248px;/*ALTURA*/
+    margin-left: -10%;
+    position: absolute;
 }
 
 .divNome{    
@@ -30,14 +35,14 @@
     margin-top: 0%;
     color:black;
     font-size: 20px;
-    position:absolute;   
+    position: relative;;   
     text-shadow: 1px 1px 1px orange, -1px 1px 1px orange,1px -1px 1px orange,1px 1px 1px orange,
     -1px -1px 1px orange;/*EFEITO COM SOMBRAS PARA DA O CONTORNO DO NOME DO TIME*/
 }
 .divEscudoImg {
     margin-left: 40%;/*MARGEM ESQUERDA*/
     margin-top: -5%; /*MARGEM EM CIMA*/
-    width:45px;  /*LARGURA*/
+    height:45px;  /*LARGURA*/
     width: 0%;/*ALTURA*/
     position: absolute;
 }
@@ -106,6 +111,10 @@
 #itensMenu:hover{
     background-color: white;
     border-color: whites;
+}
+#texDec
+ {  
+        text-decoration-line: none;/*TIRANDO O SOBRINHADO DO LINK*/
 }
 
 #Login{

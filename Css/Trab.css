@@ -499,7 +499,8 @@
     background-color:lightsteelblue;
 }
 #posiBotao{
-    margin-left: 33%;
+    margin-left: 25%;
+    padding: 5%;
 }
 #posiBotao :hover {
     background-color: green;
@@ -559,13 +560,13 @@
     height: 298px;/*ALTURA*/
     width:  275px; /*LARGURA*/  
     margin: 2%;
-    padding: 2%;   
+    padding: 0%;   
 }
 
 #itemListaAdm{
     margin:25px;/*ESPAÇAMENTO VERTICAL ENTRE OS ITENS DA LISTA*/
     font-family: "arial";
-    font-size: 20px;
+    font-size: 15px;
     color:black;
     border:solid 1px;
     border-radius: 1px;
@@ -574,8 +575,14 @@
     margin-left: 40px;
     cursor: pointer;
     margin: 12%;
+    text-decoration:none;
 
 }
+a:link
+{
+text-decoration:none;/*PARA REMOVER O SUBLINHADO DOS LINKS*/
+}
+
 #itemListaAdm:hover{
     background-color:white;
     color:black;
