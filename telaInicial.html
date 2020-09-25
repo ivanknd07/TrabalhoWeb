@@ -4,6 +4,7 @@
     <head>
         <meta charset="UTF-8"><!--CONJUNTO DE CARACTERES-->
         <link rel="stylesheet" href="Css/peq.css"> <!--CONECTANDO O CSS COM O HTML-->
+        <script src="JS/Trab.js"></script>
         
         
 
@@ -39,6 +40,11 @@
                             <a href=""><li id="divlistaMenu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             &nbsp;HISTORIA</li></a> 
                             <a href=""><li id="divlistaMenu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CONQUISTAS</li></a> 
+
+                           <a id="inicio" href="cadastroTor.html"><li id="divlistaMenu">&nbsp;&nbsp;&nbsp;&nbsp;SEJA TORCEDOR </li></a>                
+                            <li id="divlistaMenu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;HISTORIA</li>
+                            <li id="divlistaMenu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CONQUISTAS</li>
                         </ul>
                     </div>
                 </div>
@@ -57,16 +63,17 @@
                                 <a id="texDec" href=""><li id="itensMenu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 &nbsp;&nbsp;&nbsp;DIRETORIA</li></a>             
                                 <a id="texDec" href=""><li id="itensMenu">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PATROCINADORES</li></a>
-                               
+                              
                                 <br><br>
 
+                                <form name= "envio">
                                 <li id="Login"><!--LOGIN-->
-                                    <form name= "envio">
+                                    
                                     <label for="email">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email:</label>                    
-                                    <input type="text" size="14" id="enviar"><br>
+                                    <input type="text" size="14" id="email"><br>
                                 
                                     <label for="senha">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Senha:&nbsp;</label>                    
-                                    <input type="text" size="14" id="enviar">
+                                    <input type="text" size="14" id="senha">
                                 </li>
 
                                 <li id="botaoRecSenha"><br><br>                
@@ -74,8 +81,12 @@
                                 </li>
                 
                                 <li id="botaoacesso"><br><br> 
+
                                     <input type="button" class="btn-sm" id="aces" value="Acesso" onclick="validacao(form)">
                                 </li> 
+
+                                </form> 
+
                         </ul>
                     </div>
 
@@ -97,6 +108,7 @@
 
                                 <a id="texDec" href="https://www.espn.com.br/" target="_blank"><li id="itensAcesso">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Espn</li></a>       
+
                          </ul>
                     </div>
                     
